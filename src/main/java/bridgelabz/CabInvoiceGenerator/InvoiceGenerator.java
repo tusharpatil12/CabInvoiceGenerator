@@ -18,6 +18,14 @@ public class InvoiceGenerator {
 		}
 		return cost;
 	}
+	
+	public  Invoice_Description calculateFareDescription(Ride[] rides) {
+        double cost = 0;
+        for (Ride ride : rides) {
+            cost = cost + this.calculateFare(ride.distance, ride.time);
+        }
+        return new Invoice_Description(rides.length, cost,avgFare);
+    }
 
 }
 
