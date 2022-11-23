@@ -19,7 +19,6 @@ public class RideRepository {
 			this.userRide.put(userId, new ArrayList<>(Arrays.asList(rides)));
 		}
 	}
-
 	public Ride[] getRides(String userId) {
 		return this.userRide.get(userId).toArray(new Ride[0]);
 	}
