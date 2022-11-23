@@ -11,7 +11,6 @@ public class InvoiceGenerator {
 			return Minimum_Fare;
 		return cost;
 	}
-	
 
 }
 
